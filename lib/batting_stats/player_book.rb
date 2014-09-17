@@ -17,7 +17,6 @@ module BattingStats
       return [nil, nil] unless @records[year] && @records[year][league]
       hi = @records[year][league][:"improved_#{statistic}"]
       id = @record_holders[year][league][:"improved_#{statistic}"]
-      binding.pry
       [hi, id]
     end
 
@@ -81,7 +80,6 @@ module BattingStats
         @records[year] = {} unless @records[year]
         @records[year][league] = {} unless @records[year][league]
         improvement = current - previous
-        # binding.pry if player.id == 'hamiljo03'
         if @records[year][league][:"improved_#{statistic}"].nil? || improvement > @records[year][league][:"improved_#{statistic}"]
           @records[year][league][:"improved_#{statistic}"] = improvement
           @record_holders[year][league][:"improved_#{statistic}"] = player.id
