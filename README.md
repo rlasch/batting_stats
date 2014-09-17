@@ -22,7 +22,7 @@ Unfortunately, I have way too many projects on my plate, so the work submitted w
 
 ## Installation
 
-git clone <url>
+git clone https://github.com/rlasch/batting_stats
 
 ## Usage
 
@@ -39,7 +39,7 @@ rake test
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/batting_stats/fork )
+1. Fork it ( https://github.com/rlasch/batting_stats/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
